@@ -1,6 +1,5 @@
 def call (def testPathLocation)
-{
-  script{    
+{ 
             script{
                 try{
                 bat env.EndTask
@@ -23,7 +22,7 @@ def call (def testPathLocation)
               
               
               
-            }
+            
             }
         }
 }
