@@ -13,7 +13,7 @@ def call (def testPathLocation)
 		    echo testPathLocation
             
 	 
-           catchError(buildResult:'UNSTABLE',catchInterruptions: true,message:'RSO Standard Catch Error', stageResult: 'UNSTABLE'){
+         
                
                 runFromAlmBuilder almApiKey: '', almClientID: 'apikey-rpbedbkrhmrbnjsmkime', almCredentialsScope: 'SYSTEM', almDomain: 'JDE_TRAINING', almPassword: '', almProject: 'Kauri_Training', almRunHost: '', almRunMode: 'RUN_LOCAL', almServerName: 'JDEALM', 
                   almTestSets: '''Team_Alpha\\Digital Prospect Order\\A52. 1_DigitalWebShopOrder''', almUserName: '', areParametersEnabled: false, filterTestsModel: [blockedCheckbox: false, failedCheckbox: true, noRunCheckbox: false, notCompletedCheckbox: false, passedCheckbox: false, testName: ''], isSSOEnabled: true, specifyParametersModel: [parameterJson: '']
@@ -25,6 +25,6 @@ def call (def testPathLocation)
               
               
             
-            }
+            
         }
 }
