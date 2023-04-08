@@ -9,6 +9,8 @@ def call (def testPathLocation)
             catch(err){
                 echo 'There was some expected error during cleanup activity but it is handled.'
             }
+		    
+		    echo testPathLocation
             
 	 
            catchError(buildResult:'UNSTABLE',catchInterruptions: true,message:'RSO Standard Catch Error', stageResult: 'UNSTABLE'){
