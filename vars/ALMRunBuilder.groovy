@@ -37,8 +37,8 @@ def call (def testPathLocation)
 		    }
 		
 	        resultFile = findFiles excludes: '', glob: 'Results*.xml'
-		def xml = readFile resultFile[0].name
-		def xmlContents = new XmlParser().parseText(xml)
+		 xml = readFile resultFile[0].name
+		 xmlContents = new XmlParser().parseText(xml)
 		status =((xmlContents.children())[0].children())[0].attributes().status   
 		    
 	    return [status]
