@@ -19,6 +19,7 @@ def call (def testPathLocation)
 		resultFile = findFiles excludes: '', glob: 'Results*.xml'
 		def xml = readFile resultFile[0].name
 		def xmlContents = new XmlParser().parseText(xml)
+	    print(xmlContents)
 		status =((xmlContents.children())[0].children())[0].attributes().status    
 	    echo 'first run ${status}'
 	    // rerun the same test if it fails 
